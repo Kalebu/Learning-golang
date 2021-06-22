@@ -1,7 +1,5 @@
 // Learning concept of loop in go
 
-// Learning concept of loop in go
-
 package main
 
 import "fmt"
@@ -20,3 +18,5 @@ func main() {
 		fmt.Println(number, "x", i, "=", i*number)
 	}
 }
+
+// 3
