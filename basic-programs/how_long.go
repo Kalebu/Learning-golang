@@ -8,11 +8,11 @@ import (
 )
 
 func factorial(n float64) float64 {
-	fact := 1
+	var fact float64 = 1
 	for i := 1; i <= int(n); i++ {
-		fact *= i
+		fact *= float64(i)
 	}
-	return float64(fact)
+	return fact
 }
 
 func main() {
