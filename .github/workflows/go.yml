@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: returntocorp/semgrep-action@v1
         with:
-          args: ./...
+          args: ./
           config: >-
             p/security-audit
 
