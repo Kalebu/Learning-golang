@@ -2,18 +2,18 @@ name: Go
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   gosec-auto-analysis:
     runs-on: ubuntu-latest
     env:
-      GO111MODULE: on
+      GO101MODULE: on # Look for hardcoded credentials
 
     steps:
       - uses: actions/checkout@v1
       - uses: securego/gosec@master
         with:
-          args: "./"
+          args: "./.."
