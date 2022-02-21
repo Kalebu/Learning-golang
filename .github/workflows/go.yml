@@ -1,4 +1,4 @@
-name: Go
+name: Gosec Action | Demo
 
 on:
   push:
@@ -7,6 +7,16 @@ on:
     branches: [main]
 
 jobs:
+  semgrep-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: returntocorp/semgrep-action@v1
+        with:
+          args: ./...
+          config: >-
+            p/security-audit
+
   gosec-auto-analysis:
     runs-on: ubuntu-latest
 
