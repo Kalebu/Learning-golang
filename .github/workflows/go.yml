@@ -9,8 +9,6 @@ on:
 jobs:
   gosec-auto-analysis:
     runs-on: ubuntu-latest
-    env:
-      GO101MODULE: on # Look for hardcoded credentials
 
     steps:
       - uses: actions/checkout@v2
