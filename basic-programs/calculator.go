@@ -42,6 +42,8 @@ func main() {
 		fmt.Println(divide(num1, num2))
 	}
 
+	fmt.Println("=======The eNd=======")
+
 }
 
 // 2
